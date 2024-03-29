@@ -1,0 +1,168 @@
+
+Devops:
+
+D:\Devops\Git\practice2
+
+git downloads
+github.com
+password : devops*@123
+
+ramya@LAPTOP-ODLVGP5J MINGW64 /d/Devops/Git/Practice1
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+ramya@LAPTOP-ODLVGP5J MINGW64 /d/Devops/Git/Practice1
+$ git init
+Initialized empty Git repository in D:/Devops/Git/Practice1/.git/
+
+ramya@LAPTOP-ODLVGP5J MINGW64 /d/Devops/Git/Practice1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+ramya@LAPTOP-ODLVGP5J MINGW64 /d/Devops/Git/Practice1 (master)
+$ touch file1 file2 file3 file4 file5
+
+ramya@LAPTOP-ODLVGP5J MINGW64 /d/Devops/Git/Practice1 (master)
+$ ls -lart
+total 4
+drwxr-xr-x 1 ramya 197121 0 Mar 28 16:29 ../
+drwxr-xr-x 1 ramya 197121 0 Mar 28 16:32 .git/
+-rw-r--r-- 1 ramya 197121 0 Mar 28 16:33 file1
+-rw-r--r-- 1 ramya 197121 0 Mar 28 16:33 file2
+-rw-r--r-- 1 ramya 197121 0 Mar 28 16:33 file3
+-rw-r--r-- 1 ramya 197121 0 Mar 28 16:33 file4
+drwxr-xr-x 1 ramya 197121 0 Mar 28 16:33 ./
+-rw-r--r-- 1 ramya 197121 0 Mar 28 16:33 file5
+
+ramya@LAPTOP-ODLVGP5J MINGW64 /d/Devops/Git/Practice1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1
+        file2
+        file3
+        file4
+        file5
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ramya@LAPTOP-ODLVGP5J MINGW64 /d/Devops/Git/Practice1 (master)
+$ git add file1
+
+ramya@LAPTOP-ODLVGP5J MINGW64 /d/Devops/Git/Practice1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file1
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file2
+        file3
+        file4
+        file5
+
+
+ramya@LAPTOP-ODLVGP5J MINGW64 /d/Devops/Git/Practice1 (master)
+$ git add *
+
+ramya@LAPTOP-ODLVGP5J MINGW64 /d/Devops/Git/Practice1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file1
+        new file:   file2
+        new file:   file3
+        new file:   file4
+        new file:   file5
+
+
+ramya@LAPTOP-ODLVGP5J MINGW64 /d/Devops/Git/Practice1 (master)
+$ git commit -m "commiting my first file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'ramya@LAPTOP-ODLVGP5J.(none)')
+
+ramya@LAPTOP-ODLVGP5J MINGW64 /d/Devops/Git/Practice1 (master)
+$ git config -global user.email "gireddyramyasree@gamil.com"
+error: did you mean `--global` (with two dashes)?
+
+ramya@LAPTOP-ODLVGP5J MINGW64 /d/Devops/Git/Practice1 (master)
+$ git commit --global ^C
+
+ramya@LAPTOP-ODLVGP5J MINGW64 /d/Devops/Git/Practice1 (master)
+$ git config --global user.email "gireddyramyasree@gmail.com"
+
+ramya@LAPTOP-ODLVGP5J MINGW64 /d/Devops/Git/Practice1 (master)
+$ git commit -m "commiting my first file"
+[master (root-commit) 90caae3] commiting my first file
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file1
+ create mode 100644 file2
+ create mode 100644 file3
+ create mode 100644 file4
+ create mode 100644 file5
+
+ramya@LAPTOP-ODLVGP5J MINGW64 /d/Devops/Git/Practice1 (master)
+$ git remote add origin https://github.com/GireddyRamyasree/Test1.git
+
+ramya@LAPTOP-ODLVGP5J MINGW64 /d/Devops/Git/Practice1 (master)
+$ git push -u origin master
+
+
+ramya@LAPTOP-ODLVGP5J MINGW64 /d/Devops/Git/Practice1 (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 234 bytes | 234.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/GireddyRamyasree/Test1.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+ramya@LAPTOP-ODLVGP5J MINGW64 /d/Devops/Git/Practice1 (master)
+$ ^C
+
+ramya@LAPTOP-ODLVGP5J MINGW64 /d/Devops/Git/Practice1 (master)
+$
+
+git commands :
+
+ls -lart
+git status
+git init
+touch file1 file2 file3 create files command
+git add file1 to working or not need to check (Green)
+Index(Red)
+git add * (for all files)
+git commit -m "commiting my first file"
+git remote add origin https://github.com/GireddyRamyasree/Test1.git
+git push -u origin master ( need to push the code)
